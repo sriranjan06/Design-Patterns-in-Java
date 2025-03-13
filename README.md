@@ -248,5 +248,9 @@ Yes, but using interfaces makes it more flexible by enforcing a contract and ena
 | **Example**      | SimUDuck App                                                        |
 | **Common Use Cases** | Payment methods, sorting algorithms, file compression.          |
 
+# 2. Observer Pattern
+
+The observer pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+
 
 
