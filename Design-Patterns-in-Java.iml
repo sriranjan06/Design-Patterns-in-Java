@@ -5,6 +5,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/SimUDuck-Strategy-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SimUDuck-Strategy-Pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/SwingObserverExample" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/SwingObserverExample/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
