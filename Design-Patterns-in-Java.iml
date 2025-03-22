@@ -9,6 +9,10 @@
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/SwingObserverExample" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/SwingObserverExample/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern/Java_IOExample" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern/Java_IOExample/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
