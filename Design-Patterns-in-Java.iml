@@ -12,6 +12,8 @@
       <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern/AbstractFactoryMethod" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern/AbstractFactoryMethod/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern/FactoryMethod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern/FactoryMethod/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern/Java_IOExample" isTestSource="false" />
