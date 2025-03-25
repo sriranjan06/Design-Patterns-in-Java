@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/SwingObserverExample" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/SwingObserverExample/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/WeatherORama-Observer-Pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ChocOHolic-Singleton-Pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ChocOHolic-Singleton-Pattern/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern/AbstractFactoryMethod" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PizzaFactory-FactoryMethod-Pattern/AbstractFactoryMethod/src" isTestSource="false" />
