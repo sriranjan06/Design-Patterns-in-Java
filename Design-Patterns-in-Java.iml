@@ -21,6 +21,8 @@
       <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern/Java_IOExample" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern/Java_IOExample/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StarbuzzCoffee-Decorator-Pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RemoteControl-Command-Pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RemoteControl-Command-Pattern/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
