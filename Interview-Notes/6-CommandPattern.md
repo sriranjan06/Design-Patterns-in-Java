@@ -163,8 +163,3 @@ By storing previous state in the command and reversing it in the `undo()` method
 | Purpose            | Encapsulates requests as objects                      |
 | Key Benefits       | Decouples sender & receiver, supports undo/macro     |
 | Common Use Cases   | GUI, batch systems, remote control, game commands    |
-
----
-
-Ready for the next design pattern? 🚀
-
