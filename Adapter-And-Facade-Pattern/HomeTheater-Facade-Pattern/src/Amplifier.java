@@ -1,5 +1,3 @@
-package headfirst.designpatterns.facade.hometheater;
-
 public class Amplifier {
 	String description;
 	Tuner tuner;

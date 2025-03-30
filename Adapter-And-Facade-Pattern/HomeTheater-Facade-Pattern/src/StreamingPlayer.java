@@ -1,5 +1,3 @@
-package headfirst.designpatterns.facade.hometheater;
-
 public class StreamingPlayer {
 	String description;
 	int currentChapter;

@@ -24,6 +24,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Adapter-And-Facade-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Adapter-And-Facade-Pattern/Adapter-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Adapter-And-Facade-Pattern/Adapter-Pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Adapter-And-Facade-Pattern/HomeTheater-Facade-Pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Adapter-And-Facade-Pattern/HomeTheater-Facade-Pattern/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RemoteControl-Command-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RemoteControl-Command-Pattern/src" isTestSource="false" />
     </content>

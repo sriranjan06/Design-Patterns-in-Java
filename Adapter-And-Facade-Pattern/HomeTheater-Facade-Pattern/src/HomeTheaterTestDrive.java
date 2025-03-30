@@ -1,5 +1,3 @@
-package headfirst.designpatterns.facade.hometheater;
-
 public class HomeTheaterTestDrive {
 	public static void main(String[] args) {
 		Amplifier amp = new Amplifier("Amplifier");

@@ -1,5 +1,3 @@
-package headfirst.designpatterns.facade.hometheater;
-
 public class CdPlayer {
 	String description;
 	int currentTrack;
