@@ -35,6 +35,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Iterator-And-Composite-Pattern/DinerMerger-Iterator-Pattern/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Iterator-And-Composite-Pattern/Menu-Composite-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Iterator-And-Composite-Pattern/Menu-Composite-Pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GumBall-Proxy-Pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GumBall-Proxy-Pattern/RemoteProxy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GumBall-Proxy-Pattern/RemoteProxy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GumBall-Proxy-Pattern/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GumBallMachine-State-Pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GumBallMachine-State-Pattern/src" isTestSource="false" />
     </content>
