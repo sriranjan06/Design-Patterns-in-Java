@@ -242,32 +242,55 @@ items.forEach(item -> System.out.println(item));
 # Composite Pattern - Menu Example 🍽️📊
 
 ## 📌 Definition
-The **Composite Pattern** lets you **compose objects into tree structures** to represent part-whole hierarchies. It allows clients to treat **individual objects** and **compositions of objects** uniformly.
+The **Composite Pattern** lets you **compose objects into tree structures** to represent part-whole hierarchies. It allows clients to treat **individual objects** (leaves) and **compositions of objects** (composites) uniformly.
 
 > "Use the Composite Pattern when you want to be able to treat individual and composite objects uniformly."
 
 ---
 
 ## 💪 Key Benefits
-- Treats **leaf and composite objects** the same way
-- Supports **recursive structures** like trees and menus
-- Simplifies client code by removing the need for conditionals
-- Follows the **Open/Closed Principle** by allowing new leaf or composite types
+- Treats **leaf and composite objects** the same way using a shared interface.
+- Supports **recursive structures** like trees, directories, menus.
+- Simplifies client code by removing conditionals (no `instanceof` or type checks).
+- Promotes **Open/Closed Principle**: you can introduce new composite or leaf classes without altering client code.
 
 ---
 
-## 🏢 Structure
+## 📊 UML Diagram (Composite Pattern)
 ```
-Component
-├── + operation()
-├── + add(), remove(), getChild()
-│
-├── Leaf (e.g., MenuItem)
-│     └── Implements operation()
-│
-└── Composite (e.g., Menu)
-      └── Stores children and calls operation() recursively
+                        +----------------------+
+                        |   MenuComponent      |  <<abstract>>
+                        +----------------------+
+                        | + add()              |
+                        | + remove()           |
+                        | + getChild()         |
+                        | + getName()          |
+                        | + getDescription()   |
+                        | + getPrice()         |
+                        | + isVegetarian()     |
+                        | + print()            |
+                        +----------------------+
+                             /_\
+                              |
+         +--------------------+--------------------+
+         |                                         |
++--------------------+                  +------------------------+
+| MenuCompositeItem  |                  |     MenuComposite      |
++--------------------+                  +------------------------+
+| - name             |                  | - menuComponents       |
+| - description      |                  | - name                 |
+| - price            |                  | - description          |
+| - vegetarian       |                  +------------------------+
+| + print()          |                  | + add()                |
++--------------------+                  | + remove()             |
+                                        | + getChild()           |
+                                        | + print()              |
+                                        +------------------------+
 ```
+- `MenuComponent`: Abstract base class
+- `MenuCompositeItem`: Leaf node (cannot have children)
+- `MenuComposite`: Composite node (can have children)
+- `WaitressComposite`: Client that operates on MenuComponent
 
 ---
 
@@ -370,19 +393,6 @@ public class WaitressComposite {
 
 ---
 
-## 📊 Output Example:
-```
-ALL MENUS, All menus combined
----------------------
-PANCAKE HOUSE MENU, Breakfast
----------------------
-  K&B's Pancake Breakfast(v), 2.99
-     -- Pancakes with scrambled eggs and toast
-...
-```
-
----
-
 ## 🚀 Real-World Applications
 | Application     | Example                                             |
 |------------------|------------------------------------------------------|
@@ -393,7 +403,32 @@ PANCAKE HOUSE MENU, Breakfast
 
 ---
 
-## 🌟 Key Takeaways
+## 🎤 Composite Pattern - Interview Q&A
+
+### 1. What is the core idea behind the Composite Pattern?
+**Answer:** The core idea is to allow clients to treat individual objects and compositions of objects (like sub-menus or folders) uniformly using a shared interface.
+
+### 2. What design principle does the Composite Pattern promote?
+**Answer:** It promotes the **Open/Closed Principle** and the **Uniformity Principle** (treat leaf and composite the same).
+
+### 3. What is a drawback of this pattern?
+**Answer:** It may violate the **Liskov Substitution Principle** if the client incorrectly calls unsupported methods (like `add()` on a leaf node).
+
+### 4. How do you handle operations not applicable to leaves?
+**Answer:** The abstract base class provides default implementations that throw `UnsupportedOperationException`. This ensures that unsupported operations fail clearly at runtime.
+
+### 5. Is Composite Pattern recursive?
+**Answer:** Yes, it supports recursive tree structures. A composite can contain both leaves and other composites, enabling deep hierarchies.
+
+### 6. How would you traverse a Composite structure?
+**Answer:** Recursively call `print()` or any operation on child components. For advanced control, you could also build a custom **CompositeIterator**.
+
+### 7. What’s the difference between Composite and Decorator?
+**Answer:** Composite structures objects **into trees**, while Decorator wraps objects **linearly** to add behavior.
+
+---
+
+## 🌟 Summary
 | Concept                  | Detail                                                         |
 |---------------------------|----------------------------------------------------------------|
 | Pattern Type              | Structural                                                    |
@@ -401,32 +436,3 @@ PANCAKE HOUSE MENU, Breakfast
 | Leaf vs Composite         | Unified interface via abstraction                             |
 | Client Simplicity         | Treats all components uniformly (no `instanceof` required)     |
 | Limitation                | May violate LSP if not careful with unsupported operations     |
-
----
-
-## 📆 Summary Table
-| Role            | Class              | Responsibility                                |
-|------------------|---------------------|-----------------------------------------------|
-| Component        | `MenuComponent`     | Declares the common interface                 |
-| Leaf             | `MenuCompositeItem` | Implements individual menu item logic         |
-| Composite        | `MenuComposite`     | Stores children and calls their operations    |
-| Client           | `WaitressComposite` | Works with `MenuComponent` uniformly          |
-
----
-
-## 🎤 Composite Pattern - Interview Q&A
-
-### 1. What problem does the Composite Pattern solve?
-**Answer:** It lets you treat individual objects and compositions of objects uniformly.
-
-### 2. How does the Composite Pattern simplify client code?
-**Answer:** It eliminates the need for conditional logic to differentiate between leaf and composite objects.
-
-### 3. What are some real-world examples?
-**Answer:** Files and folders, company departments, graphical scenes.
-
-### 4. How does it follow the Open/Closed Principle?
-**Answer:** You can add new leaf or composite types without modifying existing code.
-
-### 5. What are the trade-offs?
-**Answer:** May violate Liskov Substitution Principle (LSP) when clients call unsupported operations on leaf nodes.
